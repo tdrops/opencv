@@ -30,15 +30,15 @@ mapy = 2 * mapy / (h - 1) - 1
 
 r, theta = cv2.cartToPolar(x=mapx, y=mapy)  # 극좌표로 변경
 
-r[r < scale] = r[r < scale] * 2  # 중심으로 부터의 거리 조정(확대 / 축소)
+r[r < scale] = r[r < scale] ** 0.6  # 중심으로 부터의 거리 조정(확대 / 축소)
 
 mapx, mapy = cv2.polarToCart(magnitude=r, angle=theta)  # 직교좌표로 원위치
 
-mapx = ((mapx + 1) * w - 1) / 2  # 중심 원위치
-mapy = ((mapy + 1) * h - 1) / 2
-
 # mapx = (mapx / (w-1) + 1) / 2
 # mapy = (mapy / (w-1) + 1) / 2
+
+mapx = (mapx + 1) * (w - 1) / 2  # 중심 원위치
+mapy = (mapy + 1) * (h - 1) / 2
 
 result = cv2.remap(src=img, map1=mapx, map2=mapy, interpolation=cv2.INTER_LINEAR)  # 공식이 반영된 상태로 그림
 
