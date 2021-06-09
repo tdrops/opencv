@@ -10,55 +10,42 @@ opencv
 """
 요약
 
-삼각 대응점으로 이미지 변형하기
+이미지 일부를 삼각형 대응 방법으로 변형
 """
 
 
 import cv2
 import numpy as np
+import matplotlib.pylab as plt
 
-img = cv2.imread("./img/taekwonv1.jpg")
-img2 = img.copy()
-draw = img.copy()
 
-# 변환 전,후 삼각형 좌표 ---①
-pts1 = np.float32([[188, 14], [85, 202], [294, 216]])
-pts2 = np.float32([[128, 40], [85, 307], [306, 167]])
+img = cv2.imread(filename="./img/taekwonv1.jpg")
 
-# 각 삼각형을 완전히 감싸는 사각형 좌표 구하기 ---②
-x1, y1, w1, h1 = cv2.boundingRect(pts1)
-x2, y2, w2, h2 = cv2.boundingRect(pts2)
+pts1 = np.float32([[188,14],[85,202],[294,216]])  # 변경전 대응점
+pts2 = np.float32([[128,40],[85,307],[306,167]])  # 변경후 대응점
 
-# 사각형을 이용한 관심영역 설정 ---③
-roi1 = img[y1:y1 + h1, x1:x1 + w1]
-roi2 = img2[y2:y2 + h2, x2:x2 + w2]
+x1,y1,w1,h1 = cv2.boundingRect(points=pts1)  # 위 삼각형의 최소,최대 x,y로 사각형 구하기
+x2,y2,w2,h2 = cv2.boundingRect(points=pts2)
 
-# 관심영역을 기준으로 좌표 계산 ---④
-offset1 = np.zeros((3, 2), dtype=np.float32)
-offset2 = np.zeros((3, 2), dtype=np.float32)
-for i in range(3):
-    offset1[i][0], offset1[i][1] = pts1[i][0] - x1, pts1[i][1] - y1
-    offset2[i][0], offset2[i][1] = pts2[i][0] - x2, pts2[i][1] - y2
+roi1 = img[y1:y1+h1,x1:x1+w1]  # 변경할 영역 잘라냄
+roi2 = img[y2:y2+h2,x2:x2+w2]
 
-# 관심 영역을 주어진 삼각형 좌표로 어핀 변환 ---⑤
-mtrx = cv2.getAffineTransform(offset1, offset2)
-warped = cv2.warpAffine(roi1, mtrx, (w2, h2), None, cv2.INTER_LINEAR, cv2.BORDER_REFLECT_101)
+pts1_0 = np.float32([[188-x1,14-y1],[85-x1,202-y1],[294-x1,216-y1]])  # 변경 대응점을 roi 기준으로 변경
+pts2_0 = np.float32([[128-x2,40-y2],[85-x2,307-y2],[306-x2,167-y2]])
 
-# 어핀 변환 후 삼각형만 골라 내기 위한 마스크 생성 ---⑥
-mask = np.zeros((h2, w2), dtype=np.uint8)
-cv2.fillConvexPoly(mask, np.int32(offset2), 255)
+matrix = cv2.getAffineTransform(src=pts1_0, dst=pts2_0)  # 대응 행렬 구함
+warped = cv2.warpAffine(src=roi1, M=matrix, dsize=(w2,h2))  # roi1에 행렬 반영
 
-# 삼각형 영역만 마스킹해서 합성 ---⑦
-warped_masked = cv2.bitwise_and(warped, warped, mask=mask)
-roi2_masked = cv2.bitwise_and(roi2, roi2, mask=cv2.bitwise_not(mask))
-roi2_masked = roi2_masked + warped_masked
-img2[y2:y2 + h2, x2:x2 + w2] = roi2_masked
+mask = np.zeros(shape=(h2,w2), dtype=np.uint8)  # roi2 크리로 마스크 만듬
+mask = cv2.fillConvexPoly(img=mask, points=np.int32(pts2_0), color=(255,255,255))  # 변경후 대응점 모양으로 잘라내기 위한 마스크
 
-# 관심 영역과 삼각형에 선 그려서 출력 ---⑧
-cv2.rectangle(draw, (x1, y1), (x1 + w1, y1 + h1), (0, 255, 0), 1)
-cv2.polylines(draw, [pts1.astype(np.int32)], True, (255, 0, 0), 1)
-cv2.rectangle(img2, (x2, y2), (x2 + w2, y2 + h2), (0, 255, 0), 1)
-cv2.imshow('origin', draw)
-cv2.imshow('warped triangle', img2)
-cv2.waitKey(0)
+warped_masked = cv2.bitwise_and(src1=warped, src2=warped, mask=mask)  # 변경된 값을 마스크 모양대로 잘라냄
+roi2_not_mask = cv2.bitwise_and(src1=roi2, src2=roi2, mask=cv2.bitwise_not(src=mask))  # roi2를 마스크 외부 값만 잘나냄
+
+roi2_not_mask = roi2_not_mask + warped_masked  # 이미지 2개를 합침
+img[y2:y2+h2,x2:x2+w2] = roi2_not_mask  # 합친 이미지를 roi2영역에 반영
+
+cv2.imshow(winname="img", mat=img)
+
+cv2.waitKey()
 cv2.destroyAllWindows()
