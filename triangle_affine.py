@@ -16,6 +16,7 @@ opencv
 
 import cv2
 import numpy as np
+import matplotlib.pylab as plt
 
 
 img = cv2.imread(filename="./img/taekwonv1.jpg")
