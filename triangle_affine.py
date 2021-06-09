@@ -36,11 +36,11 @@ pts2_0 = np.float32([[128-x2,40-y2],[85-x2,307-y2],[306-x2,167-y2]])
 matrix = cv2.getAffineTransform(src=pts1_0, dst=pts2_0)  # 대응 행렬 구함
 warped = cv2.warpAffine(src=roi1, M=matrix, dsize=(w2,h2))  # roi1에 행렬 반영
 
-mask = np.zeros(shape=(h2,w2), dtype=np.uint8)  # roi2 크리로 마스크 만듬
+mask = np.zeros(shape=(h2,w2), dtype=np.uint8)  # roi2 크기로 마스크 만듬
 mask = cv2.fillConvexPoly(img=mask, points=np.int32(pts2_0), color=(255,255,255))  # 변경후 대응점 모양으로 잘라내기 위한 마스크
 
 warped_masked = cv2.bitwise_and(src1=warped, src2=warped, mask=mask)  # 변경된 값을 마스크 모양대로 잘라냄
-roi2_not_mask = cv2.bitwise_and(src1=roi2, src2=roi2, mask=cv2.bitwise_not(src=mask))  # roi2를 마스크 외부 값만 잘나냄
+roi2_not_mask = cv2.bitwise_and(src1=roi2, src2=roi2, mask=cv2.bitwise_not(src=mask))  # roi2를 마스크 외부 값만 잘라냄
 
 roi2_not_mask = roi2_not_mask + warped_masked  # 이미지 2개를 합침
 img[y2:y2+h2,x2:x2+w2] = roi2_not_mask  # 합친 이미지를 roi2영역에 반영
