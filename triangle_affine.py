@@ -10,7 +10,7 @@ opencv
 """
 요약
 
-이미지 일부를 삼각형 대응 방법으로 변형
+2개의 삼각점 대응 방법으로 이미지 일부를 변형해서 원본 이미지에 붙이기
 """
 
 
@@ -19,33 +19,32 @@ import numpy as np
 import matplotlib.pylab as plt
 
 
+pts1 = np.float32([[188,14],[85,202],[294,216]])  # 변형의 기준이 되는 2개의 삼각점
+pts2 = np.float32([[128,40],[85,307],[306,167]])
+
 img = cv2.imread(filename="./img/taekwonv1.jpg")
+h,w = img.shape[:2]  # 높이, 폭 구함
 
-pts1 = np.float32([[188,14],[85,202],[294,216]])  # 변경전 대응점
-pts2 = np.float32([[128,40],[85,307],[306,167]])  # 변경후 대응점
+cv2.imshow(winname="original", mat=img)
 
-x1,y1,w1,h1 = cv2.boundingRect(points=pts1)  # 위 삼각형의 최소,최대 x,y로 사각형 구하기
-x2,y2,w2,h2 = cv2.boundingRect(points=pts2)
+matrix = cv2.getAffineTransform(src=pts1, dst=pts2)  # 대응점으로 행렬 구함  
+warped = cv2.warpAffine(src=img, M=matrix, dsize=(w,h))  # 원본이미지에 행렬 적용
 
-roi1 = img[y1:y1+h1,x1:x1+w1]  # 변경할 영역 잘라냄
-roi2 = img[y2:y2+h2,x2:x2+w2]
+cv2.imshow(winname="warped", mat=warped)
 
-pts1_0 = np.float32([[pts1[0,0]-x1,pts1[0,1]-y1],[pts1[1,0]-x1,pts1[1,1]-y1],[pts1[2,0]-x1,pts1[2,1]-y1]])  # 변경 대응점을 roi 기준으로 변경
-pts2_0 = np.float32([[pts2[0,0]-x2,pts2[0,1]-y2],[pts2[1,0]-x2,pts2[1,1]-y2],[pts2[2,0]-x2,pts2[2,1]-y2]])
+mask = np.zeros_like(a=img, dtype=np.uint8)
+cv2.fillPoly(img=mask, pts=[np.int32(pts2)], color=(255,255,255))  # 두번째 삼각형 모양의 마스크 생성
+notmask = cv2.bitwise_not(src=mask)
 
-matrix = cv2.getAffineTransform(src=pts1_0, dst=pts2_0)  # 대응 행렬 구함
-warped = cv2.warpAffine(src=roi1, M=matrix, dsize=(w2,h2))  # roi1에 행렬 반영
+warped_masked = cv2.bitwise_and(src1=warped, src2=mask)  # 변형한 이미지를 두번째 삼각형 모양으로 잘라냄
 
-mask = np.zeros(shape=(h2,w2), dtype=np.uint8)  # roi2 크기로 마스크 만듬
-mask = cv2.fillConvexPoly(img=mask, points=np.int32(pts2_0), color=(255,255,255))  # 변경후 대응점 모양으로 잘라내기 위한 마스크
+cv2.imshow(winname="warped_masked", mat=warped_masked)
 
-warped_masked = cv2.bitwise_and(src1=warped, src2=warped, mask=mask)  # 변경된 값을 마스크 모양대로 잘라냄
-roi2_not_mask = cv2.bitwise_and(src1=roi2, src2=roi2, mask=cv2.bitwise_not(src=mask))  # roi2를 마스크 외부 값만 잘라냄
+img_notmasked = cv2.bitwise_and(src1=img, src2=notmask)  # 원본이미지를 2번째 삼각형 모양의 반전모양으로 잘라냄
 
-result = roi2_not_mask + warped_masked  # 이미지 2개를 합침
-img[y2:y2+h2,x2:x2+w2] = result  # 합친 이미지를 roi2영역에 반영
+result = warped_masked + img_notmasked  # 여백부분이 0 이므로 더하면 원본 이미지에 변형된 이미지가 붙은 모양이됨
 
-cv2.imshow(winname="img", mat=img)
+cv2.imshow(winname="result", mat=result)
 
 cv2.waitKey()
 cv2.destroyAllWindows()
