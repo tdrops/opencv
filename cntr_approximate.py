@@ -19,6 +19,7 @@ import cv2
 import numpy as np
 
 
+
 img = cv2.imread(filename="./img/bad_rect.png")
 img2 = img.copy()
 
