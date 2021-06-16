@@ -43,5 +43,3 @@ cv2.imshow(winname="target", mat=target)
 cv2.imshow(winname="shapes", mat=shapes)
 cv2.waitKey()
 cv2.destroyAllWindows()
-
-
