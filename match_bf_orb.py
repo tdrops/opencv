@@ -26,7 +26,7 @@ orb = cv2.ORB_create()
 kp1, desc1 = orb.detectAndCompute(gray1, None)
 kp2, desc2 = orb.detectAndCompute(gray2, None)
 
-bfmatcher = cv2.BFMatcher_create()
+bfmatcher = cv2.BFMatcher_create(normType=cv2.NORM_HAMMING, crossCheck=True)
 matches = bfmatcher.match(desc1, desc2)
 result = cv2.drawMatches(img1=img1, keypoints1=kp1, img2=img2, keypoints2=kp2, matches1to2=matches, outImg=None)
 cv2.imshow(winname="result", mat=result)
