@@ -23,6 +23,8 @@ if cap.isOpened():
     fps = cap.get(propId=cv2.CAP_PROP_FPS)
     delay = int(1000 / fps)
 
+    print(f"fps:{fps}")
+
     while True:
         ret, img = cap.read()
         if ret:
