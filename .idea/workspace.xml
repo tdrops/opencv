@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd930c0d-2c7c-4aa8-8fe2-358b9e077b8c" name="Default Changelist" comment="023" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1uYcMyGqLxYBmkfTk1s1RPVYjh3" />
+  <component name="ProjectId" id="1uYd34eSTlBGF2kkVCsA6RgbTfK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,35 +31,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd930c0d-2c7c-4aa8-8fe2-358b9e077b8c" name="Default Changelist" comment="" />
-      <created>1624845920558</created>
+      <changelist id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="" />
+      <created>1624846255847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1624845920558</updated>
+      <updated>1624846255847</updated>
     </task>
-    <task id="LOCAL-00001" summary="023">
-      <created>1624846003450</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1624846003450</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="023" />
-    <option name="LAST_COMMIT_MESSAGE" value="023" />
   </component>
 </project>
