@@ -1,7 +1,7 @@
 import cv2
 
 
-filename = "./img/girl.jpg"
+filename = "../img/girl.jpg"
 img = cv2.imread(filename=filename)
 if img is None:
     print(f"{filename} open error")
