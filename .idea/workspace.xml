@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="096">
-      <change afterPath="$PROJECT_DIR$/plt_simple.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="097">
+      <change afterPath="$PROJECT_DIR$/plt_color.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624932867312</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="097">
+      <created>1624933112165</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1624933112165</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,6 +385,7 @@
     <MESSAGE value="093" />
     <MESSAGE value="094" />
     <MESSAGE value="096" />
-    <option name="LAST_COMMIT_MESSAGE" value="096" />
+    <MESSAGE value="097" />
+    <option name="LAST_COMMIT_MESSAGE" value="097" />
   </component>
 </project>
