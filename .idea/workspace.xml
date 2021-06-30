@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="121">
-      <change afterPath="$PROJECT_DIR$/bgr2yuv.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="123">
+      <change afterPath="$PROJECT_DIR$/threshold.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/04.img_processing/roi_select_img.py" />
   </component>
-  <component name="RunManager" selected="Python.bgr2yuv">
+  <component name="RunManager" selected="Python.threshold">
     <configuration name="bgr2gray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="roi_select_img" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="threshold" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +130,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roi_select_img.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threshold.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.threshold" />
         <item itemvalue="Python.bgr2yuv" />
         <item itemvalue="Python.bgr2hsv" />
         <item itemvalue="Python.bgr2gray" />
         <item itemvalue="Python.rgba" />
-        <item itemvalue="Python.roi_select_img" />
       </list>
     </recent_temporary>
   </component>
@@ -452,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624948857654</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="123">
+      <created>1624949363427</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1624949363427</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -468,7 +475,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="031" />
     <MESSAGE value="033" />
     <MESSAGE value="035" />
     <MESSAGE value="037" />
@@ -493,6 +499,7 @@
     <MESSAGE value="116" />
     <MESSAGE value="117" />
     <MESSAGE value="121" />
-    <option name="LAST_COMMIT_MESSAGE" value="121" />
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
 </project>
