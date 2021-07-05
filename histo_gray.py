@@ -21,4 +21,9 @@ img = cv2.imread(filename="../img/mountain.jpg", flags=cv2.IMREAD_GRAYSCALE)
 hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[256], ranges=[0,256])
 
 plt.plot(hist)
+
+print(hist.shape)
+print(hist.sum())
+print(img.shape)
+
 plt.show()
