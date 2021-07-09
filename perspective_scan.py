@@ -15,23 +15,21 @@ opencv
 import cv2
 import numpy as np
 
-
 img = cv2.imread(filename="../img/paper.jpg")
 draw = img.copy()
 cv2.imshow(winname="original", mat=draw)
 
 click_cnt = 0
-pts = np.zeros(shape=(4,2), dtype=np.float32)
+pts = np.zeros(shape=(4, 2), dtype=np.float32)
 
 
-def onMouse(event,x,y,flags,param):
+def onMouse(event, x, y, flags, param):
     global click_cnt, pts
 
     if event == cv2.EVENT_LBUTTONDOWN:
-        pts[click_cnt] = [x,y]
-        print(pts)
+        pts[click_cnt] = [x, y]
         click_cnt += 1
-        cv2.circle(img=draw, center=(x,y), radius=1, color=(0,255,0), thickness=-1)
+        cv2.circle(img=draw, center=(x, y), radius=1, color=(0, 255, 0), thickness=-1)
         cv2.cv2.imshow(winname="original", mat=draw)
 
         if click_cnt >= 4:
@@ -44,19 +42,19 @@ def onMouse(event,x,y,flags,param):
             right_up = pts[np.argmin(a=diff)]
             left_down = pts[np.argmax(a=diff)]
 
-            x_min = pts[:,0].min()
-            x_max = pts[:,0].max()
-            y_min = pts[:,1].min()
-            y_max = pts[:,1].max()
+            x_min = pts[:, 0].min()
+            x_max = pts[:, 0].max()
+            y_min = pts[:, 1].min()
+            y_max = pts[:, 1].max()
 
             w = x_max - x_min
             h = y_max - y_min
 
-            pts1 = np.float32([left_up,left_down,right_up,right_down])
-            pts2 = np.float32([[0,0],[0,h],[w,0],[w,h]])
+            pts1 = np.float32([left_up, left_down, right_up, right_down])
+            pts2 = np.float32([[0, 0], [0, h], [w, 0], [w, h]])
 
             m = cv2.getPerspectiveTransform(src=pts1, dst=pts2)
-            result = cv2.warpPerspective(src=img, M=m, dsize=(x_max-x_min,y_max-y_min))
+            result = cv2.warpPerspective(src=img, M=m, dsize=(x_max - x_min, y_max - y_min))
             cv2.imshow(winname="result", mat=result)
             cv2.waitKey()
             cv2.destroyAllWindows()
