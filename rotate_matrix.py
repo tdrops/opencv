@@ -15,7 +15,6 @@ opencv
 import cv2
 import numpy as np
 
-
 img = cv2.imread(filename="../img/fish.jpg")
 h,w = img.shape[:2]
 
