@@ -10,28 +10,27 @@ opencv
 """
 요약
 
-[예제 5-12] 볼록/오목 렌즈 효과
+[예제 5-13] 방사 왜곡 효과
 """
 import cv2
 import numpy as np
 
-img = cv2.imread("../img/taekwonv1.jpg")
-rows, cols = img.shape[:2]
+# k1, k2, k3 = 0.5, 0.2, 0.2
+k1, k2, k3 = -0.3, 0, 0
 
-# exp = 0.5
-exp = 1.5
-scale = 1
+img = cv2.imread(filename="../img/girl.jpg")
+rows, cols = img.shape[:2]
 
 mapy, mapx = np.indices(dimensions=(rows, cols), dtype=np.float32)
 
 mapx = 2 * mapx / (cols - 1) - 1
 mapy = 2 * mapy / (rows - 1) - 1
 
-r, theta = cv2.cartToPolar(mapx, mapy)
+r, theta = cv2.cartToPolar(x=mapx, y=mapy)
 
-r[r < scale] = r[r < scale] ** exp
+ru = r * (1 + k1 * r ** 2 + k2 * r ** 4 + k3 * r ** 6)
 
-mapx, mapy = cv2.polarToCart(magnitude=r, angle=theta)
+mapx, mapy = cv2.polarToCart(magnitude=ru, angle=theta)
 
 mapx = (mapx + 1) * (cols - 1) / 2
 mapy = (mapy + 1) * (rows - 1) / 2

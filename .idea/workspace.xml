@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="198">
-      <change afterPath="$PROJECT_DIR$/remap_lens.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="201">
+      <change afterPath="$PROJECT_DIR$/remap_barrel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remap_lens.py" beforeDir="false" afterPath="$PROJECT_DIR$/remap_lens.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +42,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/04.img_processing/histo_compare.py" />
   </component>
-  <component name="RunManager" selected="Python.remap_lens">
-    <configuration name="perspective_scan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.remap_barrel">
+    <configuration name="remap_barrel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/perspective_scan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remap_barrel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.remap_barrel" />
         <item itemvalue="Python.remap_lens" />
         <item itemvalue="Python.remap_sin_cos" />
         <item itemvalue="Python.remap_flip" />
         <item itemvalue="Python.triangle_affine" />
-        <item itemvalue="Python.perspective_scan" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00034" summary="102">
-      <created>1624935335496</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1624935335496</updated>
     </task>
     <task id="LOCAL-00035" summary="104">
       <created>1624936662471</created>
@@ -509,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626055083590</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="201">
+      <created>1626056947309</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1626056947309</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +526,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="144" />
     <MESSAGE value="146" />
     <MESSAGE value="148" />
     <MESSAGE value="150" />
@@ -550,6 +550,7 @@
     <MESSAGE value="194" />
     <MESSAGE value="197" />
     <MESSAGE value="198" />
-    <option name="LAST_COMMIT_MESSAGE" value="198" />
+    <MESSAGE value="201" />
+    <option name="LAST_COMMIT_MESSAGE" value="201" />
   </component>
 </project>
