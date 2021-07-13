@@ -19,7 +19,7 @@ img = cv2.imread(filename="../img/shapes.png")
 img2 = img.copy()
 
 img_gray = cv2.cvtColor(src=img, code=cv2.COLOR_BGR2GRAY)
-ret, th =  cv2.threshold(src=img_gray, thresh=127, maxval=255, type=cv2.THRESH_BINARY_INV)
+ret, th = cv2.threshold(src=img_gray, thresh=127, maxval=255, type=cv2.THRESH_BINARY_INV)
 
 im, contour, hierarchy = cv2.findContours(image=th, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_NONE)
 im, contour2, hierarchy = cv2.findContours(image=th, mode=cv2.RETR_EXTERNAL, method=cv2.CHAIN_APPROX_SIMPLE)
