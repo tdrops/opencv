@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="249">
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="250">
+      <change afterPath="$PROJECT_DIR$/cntr_find.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sketch_effect_cam.py" beforeDir="false" afterPath="$PROJECT_DIR$/sketch_effect_cam.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +41,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/04.img_processing/histo_compare.py" />
   </component>
-  <component name="RunManager" selected="Python.sketch_effect_cam">
-    <configuration name="pyramid_gaussian" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.cntr_find">
+    <configuration name="cntr_find" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +54,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyramid_gaussian.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cntr_find.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cntr_find" />
         <item itemvalue="Python.sketch_effect_cam" />
         <item itemvalue="Python.workshop_painting_cam" />
         <item itemvalue="Python.workshop_mosaic2" />
         <item itemvalue="Python.pyramid_laplacian" />
-        <item itemvalue="Python.pyramid_gaussian" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00063" summary="156">
-      <created>1625546480716</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1625546480716</updated>
     </task>
     <task id="LOCAL-00064" summary="159">
       <created>1625548529649</created>
@@ -509,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626154916077</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="250">
+      <created>1626161290265</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1626161290265</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="205" />
     <MESSAGE value="207" />
     <MESSAGE value="209" />
     <MESSAGE value="212" />
@@ -550,6 +549,7 @@
     <MESSAGE value="246" />
     <MESSAGE value="247" />
     <MESSAGE value="249" />
-    <option name="LAST_COMMIT_MESSAGE" value="249" />
+    <MESSAGE value="250" />
+    <option name="LAST_COMMIT_MESSAGE" value="250" />
   </component>
 </project>
