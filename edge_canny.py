@@ -16,9 +16,7 @@ import cv2
 import numpy as np
 
 img = cv2.imread(filename="../img/sudoku.jpg")
-print(img.shape)
 edges = cv2.Canny(image=img, threshold1=100, threshold2=200)
-print(edges.shape)
 
 cv2.imshow(winname="origin", mat=img)
 cv2.imshow(winname="edges", mat=edges)
