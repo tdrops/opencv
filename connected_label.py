@@ -24,8 +24,6 @@ ret, th = cv2.threshold(src=gray, thresh=127, maxval=255, type=cv2.THRESH_BINARY
 
 cnt, labels = cv2.connectedComponents(image=th)
 
-print(cnt)
-
 for i in range(cnt):
     img2[labels == i] = [int(j) for j in np.random.randint(low=0, high=255, size=3)]
 
