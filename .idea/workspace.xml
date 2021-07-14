@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="265">
-      <change afterPath="$PROJECT_DIR$/contr_matchShape.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="267">
+      <change afterPath="$PROJECT_DIR$/hough_line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,9 +39,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/07.segmentation/cntr_hierarchy.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/07.segmentation/hough_line.py" />
   </component>
-  <component name="RunManager" selected="Python.contr_matchShape">
+  <component name="RunManager" selected="Python.hough_line">
     <configuration name="cntr_approximate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="contr_moment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hough_line" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/contr_moment.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hough_line.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hough_line" />
         <item itemvalue="Python.contr_matchShape" />
         <item itemvalue="Python.cntr_convexhull" />
         <item itemvalue="Python.cntr_approximate" />
         <item itemvalue="Python.cntr_bound_fit" />
-        <item itemvalue="Python.contr_moment" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00071" summary="173">
-      <created>1625734281214</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1625734281214</updated>
     </task>
     <task id="LOCAL-00072" summary="177">
       <created>1625791697528</created>
@@ -509,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626229598174</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="267">
+      <created>1626231168280</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1626231168280</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="223" />
     <MESSAGE value="224" />
     <MESSAGE value="226" />
     <MESSAGE value="228" />
@@ -550,6 +549,7 @@
     <MESSAGE value="261" />
     <MESSAGE value="263" />
     <MESSAGE value="265" />
-    <option name="LAST_COMMIT_MESSAGE" value="265" />
+    <MESSAGE value="267" />
+    <option name="LAST_COMMIT_MESSAGE" value="267" />
   </component>
 </project>
