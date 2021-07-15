@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="277">
-      <change afterPath="$PROJECT_DIR$/flood_fill.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="280">
+      <change afterPath="$PROJECT_DIR$/watershed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/07.segmentation/hough_line.py" />
   </component>
-  <component name="RunManager" selected="Python.flood_fill">
+  <component name="RunManager" selected="Python.watershed">
     <configuration name="connected_label" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hough_lineP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="watershed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hough_lineP.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/watershed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.watershed" />
         <item itemvalue="Python.flood_fill" />
         <item itemvalue="Python.connected_label" />
         <item itemvalue="Python.distanceTrans" />
         <item itemvalue="Python.hough_circle" />
-        <item itemvalue="Python.hough_lineP" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00078" summary="190">
-      <created>1625812928431</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1625812928432</updated>
     </task>
     <task id="LOCAL-00079" summary="190">
       <created>1625812980529</created>
@@ -509,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626251420131</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="280">
+      <created>1626309436514</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1626309436514</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="232" />
     <MESSAGE value="234" />
     <MESSAGE value="236" />
     <MESSAGE value="238" />
@@ -550,6 +549,7 @@
     <MESSAGE value="273" />
     <MESSAGE value="275" />
     <MESSAGE value="277" />
-    <option name="LAST_COMMIT_MESSAGE" value="277" />
+    <MESSAGE value="280" />
+    <option name="LAST_COMMIT_MESSAGE" value="280" />
   </component>
 </project>
