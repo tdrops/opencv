@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="309">
-      <change afterPath="$PROJECT_DIR$/corner_harris.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="312">
+      <change afterPath="$PROJECT_DIR$/corner_goodFeature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/08.match_track/template_matching.py" />
   </component>
-  <component name="RunManager" selected="Python.corner_harris">
+  <component name="RunManager" selected="Python.corner_goodFeature">
     <configuration name="avg_hash" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,6 +76,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/avg_hash_matching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="corner_goodFeature" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="opencv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/corner_goodFeature.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,34 +147,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="workshop_coin_count" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="opencv" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workshop_coin_count.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.corner_goodFeature" />
         <item itemvalue="Python.corner_harris" />
         <item itemvalue="Python.template_matching" />
         <item itemvalue="Python.avg_hash_matching" />
         <item itemvalue="Python.avg_hash" />
-        <item itemvalue="Python.workshop_coin_count" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00087" summary="209">
-      <created>1626069537709</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1626069537709</updated>
     </task>
     <task id="LOCAL-00088" summary="212">
       <created>1626077862284</created>
@@ -509,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626396528113</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="312">
+      <created>1626409867759</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1626409867759</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +525,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="246" />
     <MESSAGE value="247" />
     <MESSAGE value="249" />
     <MESSAGE value="250" />
@@ -550,6 +549,7 @@
     <MESSAGE value="302" />
     <MESSAGE value="305" />
     <MESSAGE value="309" />
-    <option name="LAST_COMMIT_MESSAGE" value="309" />
+    <MESSAGE value="312" />
+    <option name="LAST_COMMIT_MESSAGE" value="312" />
   </component>
 </project>
