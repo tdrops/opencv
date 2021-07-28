@@ -10,7 +10,7 @@ opencv
 """
 요약
 
-코딩정리하고 요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약요약
+[예제 8-25] BackgroundSubtractorMOG2 배경 제거
 """
 import cv2
 import numpy as np
