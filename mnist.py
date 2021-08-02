@@ -84,8 +84,8 @@ def digit2data(src, reshape=True):
         square = np.zeros(shape=(w, w), dtype=np.uint8)
         square[pad:pad + h, :] = src
 
-    px20 = np.zeros(shape=(10, 10), dtype=np.uint8)
-    cv2.resize(src=square, dsize=(16, 16), interpolation=cv2.INTER_AREA)
+    px20 = np.zeros(shape=(20, 20), dtype=np.uint8)
+    px20[2:18, 2:18] = cv2.resize(src=square, dsize=(16, 16), interpolation=cv2.INTER_AREA)
     if reshape:
-        px20 = px20.reshape(shape=(1, 400)).astype(np.float32)
+        px20 = px20.reshape((1, 400)).astype(np.float32)
     return px20
