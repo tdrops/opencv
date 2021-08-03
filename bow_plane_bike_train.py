@@ -23,7 +23,7 @@ categories = ['airplanes', 'Motorbikes']
 
 dictionary_size = 50
 base_path = "../img/101_ObjectCategories/"
-dict_file = "./bow_plane_bike_train.npy"
+dict_file = "./plane_bike_train.npy"
 svm_model_file = "./plane_bike_svm.xml"
 
 detector = cv2.xfeatures2d.SIFT_create()

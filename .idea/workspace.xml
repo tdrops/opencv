@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="414">
-      <change afterPath="$PROJECT_DIR$/bow_plane_bike_train.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plane_bike_svm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bow_plane_bike_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bow_plane_bike_train.npy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bow_plane_bike_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/bow_plane_bike_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,13 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00131" summary="293">
-      <created>1626320803242</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1626320803242</updated>
     </task>
     <task id="LOCAL-00132" summary="297">
       <created>1626326053138</created>
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627960753235</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="414">
+      <created>1627960856985</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1627960856985</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
