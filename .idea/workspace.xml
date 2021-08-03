@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="418">
-      <change afterPath="$PROJECT_DIR$/data/haarcascade_eye.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/haarcascade_frontalface_alt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/haarcascade_frontalface_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/haar_face.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="421">
+      <change afterPath="$PROJECT_DIR$/haar_face_cam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_AI/insightbook.opencv_project_python-master/insightbook.opencv_project_python-master/09.ml/bow_plane_bike_test.py" />
   </component>
-  <component name="RunManager" selected="Python.haar_face">
+  <component name="RunManager" selected="Python.haar_face_cam">
     <configuration name="bow_plane_bike_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="svm_handwritten" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="haar_face_cam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +120,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/svm_handwritten.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/haar_face_cam.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.haar_face_cam" />
         <item itemvalue="Python.haar_face" />
         <item itemvalue="Python.bow_plane_bike_test" />
         <item itemvalue="Python.bow_plane_bike_train" />
         <item itemvalue="Python.svm_hog_pedestrian" />
-        <item itemvalue="Python.svm_handwritten" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00134" summary="305">
-      <created>1626395348030</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1626395348031</updated>
     </task>
     <task id="LOCAL-00135" summary="309">
       <created>1626396528113</created>
@@ -515,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627965116874</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="421">
+      <created>1627967603103</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1627967603103</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +528,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="347" />
     <MESSAGE value="348" />
     <MESSAGE value="351" />
     <MESSAGE value="354" />
@@ -556,6 +552,7 @@
     <MESSAGE value="410" />
     <MESSAGE value="414" />
     <MESSAGE value="418" />
-    <option name="LAST_COMMIT_MESSAGE" value="418" />
+    <MESSAGE value="421" />
+    <option name="LAST_COMMIT_MESSAGE" value="421" />
   </component>
 </project>
