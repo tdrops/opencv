@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="410">
-      <change afterPath="$PROJECT_DIR$/bow_plane_bike_train.py" afterDir="false" />
+    <list default="true" id="27b3914d-3a0c-4ba7-be6a-928e7e3d5e01" name="Default Changelist" comment="414">
+      <change afterPath="$PROJECT_DIR$/bow_plane_bike_train.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plane_bike_svm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bow_plane_bike_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/bow_plane_bike_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624846255847</updated>
-    </task>
-    <task id="LOCAL-00130" summary="290">
-      <created>1626316974931</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1626316974931</updated>
     </task>
     <task id="LOCAL-00131" summary="293">
       <created>1626320803242</created>
@@ -512,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627955850893</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="414">
+      <created>1627960753235</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1627960753235</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -528,7 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="342" />
     <MESSAGE value="343" />
     <MESSAGE value="347" />
     <MESSAGE value="348" />
@@ -553,6 +554,7 @@
     <MESSAGE value="406" />
     <MESSAGE value="408" />
     <MESSAGE value="410" />
-    <option name="LAST_COMMIT_MESSAGE" value="410" />
+    <MESSAGE value="414" />
+    <option name="LAST_COMMIT_MESSAGE" value="414" />
   </component>
 </project>
